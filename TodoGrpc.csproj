@@ -4,10 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <IncludeHttpRuleProtos>true</IncludeHttpRuleProtos>
   </PropertyGroup>
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\todo.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +19,54 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="microsoft.aspnetcore.grpc.jsontranscoding" Version="8.0.0" />
-    <PackageReference Include="microsoft.entityFrameworkCore.sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.design" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net8.0\12fbc7ffe642ca7e_greet.protodep" />
+    <Content Include="obj\Debug\net8.0\12fbc7ffe642ca7e_todo.protodep" />
+    <Content Include="obj\Debug\net8.0\apphost.exe" />
+    <Content Include="obj\Debug\net8.0\refint\ToDoGrpc.dll" />
+    <Content Include="obj\Debug\net8.0\ref\ToDoGrpc.dll" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets\msbuild.build.ToDoGrpc.props" />
+    <Content Include="obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ToDoGrpc.props" />
+    <Content Include="obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ToDoGrpc.props" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.assets.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.csproj.CopyComplete" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.dll" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.genruntimeconfig.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.MvcApplicationPartsAssemblyInfo.cache" />
+    <Content Include="obj\Debug\net8.0\ToDoGrpc.pdb" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\project.nuget.cache" />
+    <Content Include="obj\project.packagespec.json" />
+    <Content Include="obj\rider.project.model.nuget.info" />
+    <Content Include="obj\rider.project.restore.info" />
+    <Content Include="obj\ToDoGrpc.csproj.EntityFrameworkCore.targets" />
+    <Content Include="obj\ToDoGrpc.csproj.nuget.dgspec.json" />
+    <Content Include="obj\ToDoGrpc.csproj.nuget.g.props" />
+    <Content Include="obj\ToDoGrpc.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\Greet.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\GreetGrpc.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\Todo.cs" />
+    <Compile Include="obj\Debug\net8.0\Protos\TodoGrpc.cs" />
+    <Compile Include="obj\Debug\net8.0\ToDoGrpc.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\ToDoGrpc.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net8.0\ToDoGrpc.MvcApplicationPartsAssemblyInfo.cs" />
   </ItemGroup>
 
 </Project>

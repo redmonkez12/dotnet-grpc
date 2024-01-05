@@ -1,4 +1,4 @@
-namespace TodoGrpc.Models;
+﻿namespace ToDoGrpc.Models;
 
 public class ToDoItem
 {
@@ -8,7 +8,5 @@ public class ToDoItem
 
     public string? Description { get; set; }
 
-    public string MyProperty { get; set; }
-
-    public string TodoStatus { get; set; } = "NEW";
+    public string ToDoStatus { get; set; } = "NEW";
 }

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tomassvojanovsky/projects/TodoGrpc/TodoGrpc.csproj": {}
+    "D:\\projects\\dotnet-grpc\\TodoGrpc.csproj": {}
   },
   "projects": {
-    "/Users/tomassvojanovsky/projects/TodoGrpc/TodoGrpc.csproj": {
+    "D:\\projects\\dotnet-grpc\\TodoGrpc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tomassvojanovsky/projects/TodoGrpc/TodoGrpc.csproj",
+        "projectUniqueName": "D:\\projects\\dotnet-grpc\\TodoGrpc.csproj",
         "projectName": "TodoGrpc",
-        "projectPath": "/Users/tomassvojanovsky/projects/TodoGrpc/TodoGrpc.csproj",
-        "packagesPath": "/Users/tomassvojanovsky/.nuget/packages/",
-        "outputPath": "/Users/tomassvojanovsky/projects/TodoGrpc/obj/",
+        "projectPath": "D:\\projects\\dotnet-grpc\\TodoGrpc.csproj",
+        "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\dotnet-grpc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/tomassvojanovsky/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +45,16 @@
               "target": "Package",
               "version": "[2.57.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "grpc.tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -49,10 +62,6 @@
               "version": "[2.60.0, )"
             },
             "microsoft.aspnetcore.grpc.jsontranscoding": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "microsoft.entityFrameworkCore.sqlite": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -76,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
